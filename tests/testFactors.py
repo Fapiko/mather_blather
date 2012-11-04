@@ -12,6 +12,11 @@ class TestFactors(unittest.TestCase):
 		self.assertListEqual([1, 2, 5, 10], factors.factor(10))
 		self.assertListEqual([1, 2, 5, 10, 25, 50], factors.factor(100))
 
+	def testGreatestCommonDivisor(self):
+		self.assertEqual(10, factors.greatestCommonDivisor(50, 10))
+		self.assertEqual(5, factors.greatestCommonDivisor(5, 10))
+		self.assertEqual(1, factors.greatestCommonFactor(21, 58))
+
 
 if __name__ == '__main__':
 	unittest.main()
