@@ -17,6 +17,9 @@ class TestFactors(unittest.TestCase):
 		self.assertEqual(5, factors.greatestCommonDivisor(5, 10))
 		self.assertEqual(1, factors.greatestCommonFactor(21, 58))
 
+	def testFindCommonDivisibilities(self):
+		self.assertListEqual([2, 3, 4, 6, 8, 11, 12, 22, 24, 33, 44, 66, 88, 132, 264], factors.findCommonDivisibilities(22, 12))
+
 
 if __name__ == '__main__':
 	unittest.main()
