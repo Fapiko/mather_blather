@@ -8,5 +8,10 @@ class TestFactors(unittest.TestCase):
 		self.assertListEqual([431], factors.primeFactorization(431))
 		self.assertListEqual([2, 2, 2, 11], factors.primeFactorization(88))
 
+	def testFactors(self):
+		self.assertListEqual([1, 2, 5, 10], factors.factor(10))
+		self.assertListEqual([1, 2, 5, 10, 25, 50], factors.factor(100))
+
+
 if __name__ == '__main__':
 	unittest.main()

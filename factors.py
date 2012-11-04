@@ -33,3 +33,29 @@ def primeFactorization(wholeNumber):
 				primeFactors.extend(primeFactorization(result))
 
 			return primeFactors
+
+
+def factor(wholeNumber):
+
+	factors = [1, wholeNumber]
+
+	if wholeNumber in primes:
+		return factors
+
+	for i in range(2, wholeNumber / 2):
+		if wholeNumber % i == 0:
+			factors.append(i)
+			factors.append(wholeNumber / i)
+
+	# Remove dupes, sort, then return
+	factors = list(set(factors))
+	factors.sort()
+	return factors
+
+
+def greatestCommonDivisor(number1, number2):
+	print factor(number1)
+	print factor(number2)
+
+def greatestCommonFactor(number1, number2):
+	greatestCommonDivisor(number1, number2)

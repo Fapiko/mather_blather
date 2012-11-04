@@ -15,3 +15,8 @@ and the list can be expanded if need be.
 
 Generate and store the list of primes locally on the user's machine for a more individual balance of performance
 vs. range.
+
+### Caching
+
+Cache the output of any calculation where the cost to calculate is greater than the cost to look it up from cache.
+Could make this a pretty highly performant library for doing the maths.

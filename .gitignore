@@ -1,2 +1,5 @@
 # IDE Project Settings
 .idea
+
+# Local scripts
+local/
