@@ -192,3 +192,6 @@ def findCommonDivisibilities(number1, number2, numResults = 2):
 		i += 1
 
 	return results
+
+def leastCommonMultiple(number1, number2):
+	return number1 * number2 / greatestCommonDivisor(number1, number2)
