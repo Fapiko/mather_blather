@@ -7,7 +7,7 @@ of scripts I believe it may become the basis of a library for a simple CLI calcu
 ## Caveats
 ### Prime Factorization
 
-Prime numbers are stored in a hard coded list that only goes up to 997.  The decision to stop there was arbitrary
+Prime numbers are stored in a hard coded list that only goes up to 10007.  The decision to stop there was arbitrary
 and the list can be expanded if need be.
 
 ## Future Ideas
