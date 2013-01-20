@@ -1,5 +1,5 @@
 import unittest
-import parser
+from mather_blather import parser
 
 class TestParser(unittest.TestCase):
 

@@ -1,5 +1,5 @@
 import unittest
-import factors
+from mather_blather import factors
 
 class TestFactors(unittest.TestCase):
 
